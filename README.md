@@ -1,16 +1,83 @@
-# React + Vite
+# IssueFlow 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern project and issue management application built with React.
 
-Currently, two official plugins are available:
+IssueFlow helps teams organize projects, track issues, manage workflows, and monitor development progress through an interactive dashboard and Kanban board.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 📊 Dashboard with project and issue statistics  
+- 📁 Create, edit, and delete projects 
+- 🐛 Create, edit, and delete issues
+- 🔍 Search and filter issues
+- 📌 Filter by project, status, priority, and type
+- 📋 Interactive Kanban board
+- 🖱️ Drag and drop issues between workflow stages
+- 📈 Automatic project progress calculation
+- 🕒 Recent activity tracking
+- 🌙 Dark mode support
+- 💾 Local storage persistence
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack 
 
-## Expanding the ESLint configuration
+- React
+- React Router
+- Tailwind CSS
+- JavaScript
+- Lucide React
+- Vite
+- LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+src
+├── components
+│   ├── ActiveProjects.jsx
+│   ├── DashboardHeader.jsx
+│   ├── IssueCard.jsx
+│   ├── IssueList.jsx
+│   ├── IssueOverview.jsx
+│   ├── IssuesHeader.jsx
+│   ├── IssuesToolbar.jsx
+│   ├── KanbanCard.jsx
+│   ├── KanbanColumn.jsx
+│   ├── Navbar.jsx
+│   ├── NewIssueModal.jsx
+│   ├── NewProjectModal.jsx
+│   ├── ProjectCard.jsx
+│   ├── ProjectList.jsx
+│   ├── ProjectsHeader.jsx
+│   ├── RecentActivity.jsx
+│   ├── Sidebar.jsx
+│   └── StatsCard.jsx
+│
+├── layouts
+│   └── MainLayout.jsx
+│
+├── pages
+│   ├── Dashboard.jsx
+│   ├── Projects.jsx
+│   ├── Issues.jsx
+│   └── Board.jsx
+│
+├── utils
+│   ├── addActivity.js
+│   ├── formatTime.js
+│   ├── generateId.js
+│   ├── projectProgress.js
+│   └── storage.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+## 👨‍💻 Author
+
+**Ritesh Tiwari**
+
+B.Tech Computer Science Engineering student passionate about web development, software engineering, and building practical applications.
+
+---
+
+⭐ If you like this project, consider giving it a star!
