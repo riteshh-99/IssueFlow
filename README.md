@@ -4,10 +4,12 @@ A modern project and issue management application built with React.
 
 IssueFlow helps teams organize projects, track issues, manage workflows, and monitor development progress through an interactive dashboard and Kanban board.
 
+---
+
 ## ✨ Features
 
-- 📊 Dashboard with project and issue statistics  
-- 📁 Create, edit, and delete projects 
+- 📊 Dashboard with project and issue statistics
+- 📁 Create, edit, and delete projects
 - 🐛 Create, edit, and delete issues
 - 🔍 Search and filter issues
 - 📌 Filter by project, status, priority, and type
@@ -16,9 +18,11 @@ IssueFlow helps teams organize projects, track issues, manage workflows, and mon
 - 📈 Automatic project progress calculation
 - 🕒 Recent activity tracking
 - 🌙 Dark mode support
-- 💾 Local storage persistence
+- 💾 LocalStorage persistence
 
-## 🛠️ Tech Stack 
+---
+
+## 🛠️ Tech Stack
 
 - React
 - React Router
@@ -27,6 +31,8 @@ IssueFlow helps teams organize projects, track issues, manage workflows, and mon
 - Lucide React
 - Vite
 - LocalStorage
+
+---
 
 ## 📂 Project Structure
 
@@ -71,23 +77,37 @@ src
 ├── App.jsx
 ├── main.jsx
 └── index.css
+```
+
+---
 
 ## 📸 Screenshots
 
 ### Dashboard
+
 ![Dashboard](public/screenshots/dashboard.png)
 
+
 ### Projects
+
 ![Projects](public/screenshots/projects.png)
 
+
 ### Issues
+
 ![Issues](public/screenshots/issues.png)
 
+
 ### Kanban Board
+
 ![Board](public/screenshots/board.png)
 
+
 ### Recent Activity
+
 ![Recent Activity](public/screenshots/recentActivity.png)
+
+---
 
 ## 👨‍💻 Author
 
