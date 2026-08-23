@@ -72,6 +72,23 @@ src
 ├── main.jsx
 └── index.css
 
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](public/screenshots/dashboard.png)
+
+### Projects
+![Projects](public/screenshots/projects.png)
+
+### Issues
+![Issues](public/screenshots/issues.png)
+
+### Kanban Board
+![Board](public/screenshots/board.png)
+
+### Recent Activity
+![Recent Activity](public/screenshots/recentActivity.png)
+
 ## 👨‍💻 Author
 
 **Ritesh Tiwari**
