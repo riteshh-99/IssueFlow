@@ -9,6 +9,9 @@ const MainLayout = () => {
     return localStorage.getItem('theme') === 'dark'
   })
 
+  const [mobileMenu, setMobileMenu] = useState(false)
+
+
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark')
@@ -19,9 +22,11 @@ const MainLayout = () => {
     }
   }, [darkMode])
 
+
   const toggleTheme = () => {
     setDarkMode(prev => !prev)
   }
+
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100">
@@ -29,15 +34,46 @@ const MainLayout = () => {
       <Navbar
         darkMode={darkMode}
         toggleTheme={toggleTheme}
+        toggleSidebar={() => setMobileMenu(true)}
       />
+
 
       <div className="flex min-h-[calc(100vh-72px)]">
 
-        <Sidebar />
+
+        {/* Desktop Sidebar */}
+        <div className="hidden md:block">
+          <Sidebar />
+        </div>
+
+
+        {/* Mobile Sidebar */}
+        {mobileMenu && (
+          <div className="fixed inset-0 z-50 md:hidden">
+
+            {/* Overlay */}
+            <div
+              className="absolute inset-0 bg-black/40"
+              onClick={() => setMobileMenu(false)}
+            />
+
+
+            {/* Menu */}
+            <div className="relative h-full w-64 bg-white dark:bg-slate-900">
+
+              <Sidebar />
+
+            </div>
+
+          </div>
+        )}
+
+
 
         <main className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8">
           <Outlet />
         </main>
+
 
       </div>
 

@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { Search, Bell, Moon, Sun } from 'lucide-react'
+import { Search, Bell, Moon, Sun, Menu } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 
-const Navbar = ({ darkMode, toggleTheme }) => {
+const Navbar = ({ darkMode, toggleTheme, toggleSidebar }) => {
 
     const navigate = useNavigate()
     const [search, setSearch] = useState('')
@@ -125,6 +125,21 @@ const Navbar = ({ darkMode, toggleTheme }) => {
             hover:bg-slate-100
             dark:hover:bg-slate-800
           ">
+
+                        <button
+                            onClick={toggleSidebar}
+                            className="
+    md:hidden
+    rounded-lg
+    p-2
+    text-slate-500
+    hover:bg-slate-100
+    dark:text-slate-400
+    dark:hover:bg-slate-800
+  "
+                        >
+                            <Menu size={22} />
+                        </button>
 
                         <div className="
               flex h-8 w-8
