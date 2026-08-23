@@ -33,13 +33,14 @@ const Sidebar = () => {
 
     return (
         <aside className="
-      w-64 shrink-0
-      border-r border-slate-200
-      bg-white
-      transition-colors
-      dark:border-slate-800
-      dark:bg-slate-900
-    ">
+hidden md:block
+w-64 shrink-0
+border-r border-slate-200
+bg-white
+transition-colors
+dark:border-slate-800
+dark:bg-slate-900
+">
             <div className="flex h-full flex-col p-4">
 
                 <nav className="space-y-1">

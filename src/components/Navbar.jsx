@@ -24,7 +24,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
       h-18
       border-b border-slate-200
       bg-white
-      px-6 lg:px-8
+      px-4 sm:px-6 lg:px-8
       transition-colors
       dark:border-slate-800
       dark:bg-slate-900
@@ -38,7 +38,7 @@ const Navbar = ({ darkMode, toggleTheme }) => {
                     </h1>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 sm:gap-4">
 
                     {/* Search */}
 

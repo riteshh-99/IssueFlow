@@ -35,7 +35,7 @@ const MainLayout = () => {
 
         <Sidebar />
 
-        <main className="flex-1 overflow-auto p-6 lg:p-8">
+        <main className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8">
           <Outlet />
         </main>
 
