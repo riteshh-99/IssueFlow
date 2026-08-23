@@ -6,7 +6,7 @@ import {
     Kanban
 } from 'lucide-react'
 
-const Sidebar = () => {
+const Sidebar = ({ closeSidebar }) => {
 
     const navItems = [
         {
@@ -33,8 +33,8 @@ const Sidebar = () => {
 
     return (
         <aside className="
-hidden md:block
 w-64 shrink-0
+h-full
 border-r border-slate-200
 bg-white
 transition-colors
@@ -52,6 +52,7 @@ dark:bg-slate-900
                             <NavLink
                                 key={item.path}
                                 to={item.path}
+                                onClick={closeSidebar}
                                 className={({ isActive }) =>
                                     `flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition ${isActive
                                         ? 'bg-indigo-50 text-indigo-700 dark:bg-indigo-500/15 dark:text-indigo-400'

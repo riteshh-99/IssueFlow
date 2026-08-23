@@ -65,12 +65,30 @@ const NewIssueModal = ({ onClose, onCreate, issue, projects }) => {
     }
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4">
+        <div className="
+  fixed inset-0 
+  z-50 
+  flex 
+  items-start 
+  sm:items-center
+  justify-center 
+  bg-slate-900/40 
+  p-4
+  overflow-y-auto
+">
 
             <div className="
-        w-full max-w-2xl rounded-2xl bg-white p-6 shadow-xl
-        dark:bg-slate-900
-      ">
+  w-full max-w-xl
+  mx-auto
+  rounded-2xl
+  bg-white
+  text-slate-900
+  p-4 sm:p-6
+  shadow-xl
+
+  dark:bg-slate-900
+  dark:text-slate-100
+">
 
                 <div className="mb-6">
                     <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100">

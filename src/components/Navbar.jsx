@@ -21,14 +21,16 @@ const Navbar = ({ darkMode, toggleTheme, toggleSidebar }) => {
 
     return (
         <header className="
-      h-18
-      border-b border-slate-200
-      bg-white
-      px-4 sm:px-6 lg:px-8
-      transition-colors
-      dark:border-slate-800
-      dark:bg-slate-900
-    ">
+h-18
+w-full
+overflow-hidden
+border-b border-slate-200
+bg-white
+px-4 sm:px-6 lg:px-8
+transition-colors
+dark:border-slate-800
+dark:bg-slate-900
+">
 
             <div className="flex h-full items-center justify-between">
 

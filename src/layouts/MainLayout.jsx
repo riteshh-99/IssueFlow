@@ -43,7 +43,7 @@ const MainLayout = () => {
 
         {/* Desktop Sidebar */}
         <div className="hidden md:block">
-          <Sidebar />
+          <Sidebar closeSidebar={() => {}} />
         </div>
 
 
@@ -57,20 +57,23 @@ const MainLayout = () => {
               onClick={() => setMobileMenu(false)}
             />
 
-
-            {/* Menu */}
-            <div className="relative h-full w-64 bg-white dark:bg-slate-900">
-
-              <Sidebar />
-
-            </div>
+            {/* Drawer */}
+            <aside className="
+      relative
+      h-full
+      w-64
+      bg-white
+      dark:bg-slate-900
+    ">
+              <Sidebar closeSidebar={() => setMobileMenu(false)} />
+            </aside>
 
           </div>
         )}
 
 
 
-        <main className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8">
+        <main className="flex-1 min-w-0 overflow-x-hidden overflow-y-auto p-4 sm:p-6 lg:p-8">
           <Outlet />
         </main>
 
